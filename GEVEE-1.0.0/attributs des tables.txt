@@ -1,0 +1,73 @@
+Client ( N° Client ou code, Nom Client, Adresse, Tel, FAx,  Localité)
+Chauffeur ( Matricule, Nom , Prénom,N° Permis , date de validité permis, information, N° Telephone, N° CNI ,date delivrance CNI, date de validité CNI) -------------------------- Déjà------------------
+ordre de transport ( N° OT, Activité,date d'enlèvement, date de dechargement, N° Dossier ,lieu d'enlèvement, lieu de dechargement, poids total,nbre de colis total,marchandise)
+
+Detail ordre ou conteneur ( N°ordre, N° Plomb1, N° plomb2, Type Conteneur, marchandise,poids, volume,Aconier, N° commande )
+
+Lieu de livraison ( Code, libelle)
+
+Tracteur ( N° Parc, N° Imatriculation, Famille, date mise en circulation,Marque , capacité,  CHASSI, NBRE ESSIEU, ETAT FONCTIONNEMENT) -------------------------- Déjà------------------
+
+Remorque ( N° Parc, N° Imatriculation, Famille, date mise en circulation,Marque , CHASSI, NBRE ESSIEU, ETAT FONCTIONNEMENT) -------------------------- Déjà------------------
+
+chekpoints ( code ,libelle)
+
+Utilistateur ( code, nom, Fonction, mot de passe) -------------------------- Déjà------------------
+
+MOuvement ( Date de depart, lieu de depart, Nom Chauffeur, remorque, tracteur,  lieu destination, date d'arrivée, heure de depart, heure d'arrivée, nom du receptionniste, Contact receptionniste, état du conteneur, Type de mouvement 
+ montant caution, montant detention, date estimatif du retour et date effectif de retour)
+
+
+
+
+
+Explications des types de deplacement 
+
+
+Transfert: Lieu de depart = ( PAR DIT, PARC a vide Armateur)  ,  destination= Parc GS ; (Etat = Plein, vide)
+
+
+
+Positionnement : Lieu de depart= Parc à vide Armateur ou PARC GS ; destination=  Client; Etat = vide
+
+Livraison : Lieu de depart: lieu d'enlèvement ou PARC GS  ; destination= Client ; Etat = Plein
+
+Retour vide : Lieu de depart : Client ,  Destination: PARC à vide  Armateur ou PARC GS ; Etat = vide
+
+
+Restitution Vide : Lieu de depart:   PARC GS, PAR A vide Armateur
+
+Double relevage : Lieu de depart= destination
+
+
+
+
+
+Familles Tracteurs :  Tracteurs routiers, tracteurs agricoles -------------------------- Déjà------------------
+
+Familles Remorques: Squelettes -------------------------- Déjà------------------
+
+Activite : Import, Export -------------------------- Déjà------------------
+
+Aconier: Maersk, MSC, MOVIS, SOCOMAR, Getma, Necotrans, Transimex
+
+Ennumérées: Type Mouvement: Transfert , Positionnement , Livraison , retour du vide , Restitution Vide, double relevage)
+
+TYpe conteneur: 20' DRY, 40' DRY, 20' Reefer, 40' reefer, 40 'OPEN TOP, 20' OPEN TOP,  40 ' FLAT, 20' FLAT
+
+Marque : Mercedess, Renault, JAC, AUTRES -------------------------- Déjà------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
